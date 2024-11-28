@@ -1,0 +1,134 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 font-weight-bold text-primary">
+      Sobre a Saúde Mental
+    </h1>
+    <p class="text-muted">
+      A saúde mental é essencial para o bem-estar geral. Ela afeta como
+      pensamos, sentimos e agimos, além de influenciar nossas escolhas e
+      relacionamentos.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="h4 text-success font-weight-bold mb-3">
+        O que é Saúde Mental?
+      </h2>
+      <p>
+        Saúde mental é um (teste) estado de bem-estar no qual uma pessoa consegue lidar com as demandas do dia a dia, trabalhar de forma produtiva, contribuir para a sua comunidade e enfrentar desafios emocionais e sociais. Ela vai além da ausência de doenças mentais, englobando aspectos como equilíbrio emocional, habilidades sociais, resiliência e autoconhecimento. A saúde mental pode ser afetada por fatores genéticos, ambientais, sociais ou psicológicos, como estresse no trabalho, dificuldades financeiras, traumas ou doenças físicas. Buscar ajuda, como conversar com um psicólogo ou psiquiatra, pode ser essencial para manter ou restaurar esse equilíbrio.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="{{ url_for('static', filename='images/saude_mental.png') }}"
+        alt="Imagem sobre a Saúde Mental"
+        class="img-fluid rounded shadow-sm"
+      />
+    </div>
+  </div>
+    <div class="col-lg-6">
+      <h2 class="h4 text-success font-weight-bold mb-3">
+        Qual a importância de ter cuidados com a saúde mental?
+      </h2>
+      <p>
+        Cuidar da saúde mental é um dos pilares fundamentais do bem-estar humano. Cuidar da saúde mental é essencial porque ela impacta diretamente todos os aspectos da nossa vida, desde a forma como nos relacionamos com os outros até o desempenho no trabalho ou nos estudos. 
+      </p>
+    </div>
+  <hr class="my-5" />
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="h4 text-warning font-weight-bold mb-3">
+        Sintomas Comuns de Transtornos Mentais
+      </h2>
+      <ul class="list-group">
+        <li class="list-group-item">Desenvolvimento de transtornos mentais</li>
+        <li class="list-group-item">Perda da capacidade de lidar com o cotidiano</li>
+        <li class="list-group-item">Riscos comportamentais</li>
+        <li class="list-group-item">Baixa autoestima e qualidade de vida</li>
+        <li class="list-group-item">
+          Prejuízo nos relacionamentos
+        </li>
+        <li class="list-group-item">
+          Alterações nos padrões de sono e apetite
+        </li>
+        <li class="list-group-item">
+          Isolamento social ou falta de interesse por atividades prazerosas
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <h2 class="h4 text-info font-weight-bold mb-3">
+        Como Cuidar da Sua Saúde Mental
+      </h2>
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <i class="bi bi-person-check-fill text-danger"></i>
+          <strong>Fazer atividades físicas regulares:</strong> como caminhada ou
+          yoga.
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-brightness-high text-primary"></i>
+          <strong>Manter uma alimentação equilibrada:</strong> para o bem-estar
+          geral.
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-pause-fill text-dark"></i>
+          <strong>Ter momentos de lazer e descanso:</strong> para reduzir o
+          estresse.
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-airplane-engines text-success"></i>
+          <strong>Praticar meditação:</strong> ou técnicas de relaxamento para
+          acalmar a mente.
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-moon text-muted"></i>
+          <strong>Estabelecer uma boa rotina de sono:</strong> garantindo
+          descanso adequado.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="my-5" />
+
+  <div class="text-center">
+    <h2 class="h4 text-danger font-weight-bold">
+      Quando Buscar Ajuda Profissional?
+    </h2>
+    <p class="text-muted">
+      Se você está enfrentando dificuldades emocionais ou psicológicas, é
+      importante buscar ajuda profissional. Psicólogos e psiquiatras podem
+      oferecer suporte e orientações adequadas para o tratamento de transtornos
+      mentais.
+    </p>
+    <a href="/contato" class="btn btn-primary btn-lg"> Fale Conosco</a>
+  </div>
+
+  <hr class="my-5" />
+
+  <div>
+    <h2 class="h4 text-info font-weight-bold mb-3">Recursos e Apoio</h2>
+    <ul>
+      <li>
+        <strong>CVV (Centro de Valorização da Vida):</strong>
+        <a href="https://www.cvv.org.br/" target="_blank">www.cvv.org.br</a> -
+        Oferece apoio emocional e prevenção ao suicídio.
+      </li>
+      <li>
+        <strong>Associação Brasileira de Psiquiatria (ABP):</strong>
+        <a href="https://www.abp.org.br/" target="_blank">www.abp.org.br</a> -
+        Oferece informações sobre saúde mental e encontra profissionais de saúde
+        mental.
+      </li>
+      <li>
+        <strong>Tratamento Psicoterápico:</strong> Procure um psicólogo ou
+        psiquiatra qualificado para orientação e tratamento.
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
